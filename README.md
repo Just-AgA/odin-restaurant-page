@@ -1,0 +1,1 @@
+This is the project to create a restaurant page generated dynamically by JavaScript by changing the DOM
