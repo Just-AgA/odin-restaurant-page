@@ -10,4 +10,10 @@ const paragraphComponent = () => {
     return paragraph;
 }
 
+const openingHrsComponent = () => {
+    const openingHrs = document.createElement("p");
+    openingHrs.innerHTML = "Opening hours:";
+    return openingHrs;
+}
+
 
