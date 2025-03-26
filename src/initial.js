@@ -28,3 +28,12 @@ const unorderedListComponent = () => {
     return unorderedList;
 }
 
+const addressComponent = () => {
+    const address = document.createElement("address");
+    const addressParagraph = document.createElement("p");
+    addressParagraph.innerHTML = "123 Maple Street,<br> Pleasantville, <br>USA";
+    address.appendChild(addressParagraph);
+    return address;
+}
+
+
