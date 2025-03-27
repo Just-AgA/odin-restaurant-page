@@ -6,7 +6,7 @@ const pageComponent = () => {
 
 const paragraphComponent = () => {
     const paragraph = document.createElement("p");
-    paragraph.innerHTML = "Welcome to <strong>Brew & Bites</strong> restaurant,a charming spot where every sip of coffee and bite of food feels like home. Whether you're here to relax with a warm latte or enjoy a delicious meal, our cozy ambiance and friendly service will make you feel right at ease. From savory sides to hearty main dishes, we’ve got something to satisfy every craving."
+    paragraph.innerHTML = "Welcome to <strong>Brew & Bites</strong> restaurant,a charming spot where every sip of coffee and bite of food feels like home. Whether you're here to relax with a warm latte or enjoy a delicious meal, our cozy ambiance and friendly service will make you feel right at ease. From savory sides to hearty main dishes, we've got something to satisfy every craving."
     return paragraph;
 }
 
@@ -34,6 +34,18 @@ const addressComponent = () => {
     addressParagraph.innerHTML = "123 Maple Street,<br> Pleasantville, <br>USA";
     address.appendChild(addressParagraph);
     return address;
+}
+
+const initialDivComponent = () => {
+    const initialDiv = document.createElement("div");
+    initialDiv.classList.add("init-div");
+    
+    initialDiv.appendChild(pageComponent());
+    initialDiv.appendChild(paragraphComponent());
+    initialDiv.appendChild(openingHrsComponent())
+    initialDiv.appendChild(unorderedListComponent());
+    initialDiv.appendChild(addressComponent());
+    return initialDiv;
 }
 
 
