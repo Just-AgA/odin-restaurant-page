@@ -48,4 +48,9 @@ const initialDivComponent = () => {
     return initialDiv;
 }
 
+export const initialLoad = () => {
+    const firstPage = document.querySelector("#content");
+    firstPage.innerHTML = "";
 
+    firstPage.appendChild(initialDivComponent());
+}
