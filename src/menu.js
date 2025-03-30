@@ -33,7 +33,7 @@ function sidesMenu() {
     ];
     
     const sidesMenuDiv = document.createElement("div");
-    sidesMenu.classList.add("sides-menu");
+    sidesMenuDiv.classList.add("sides-menu");
     const sides = document.createElement("h2");
     sides.innerHTML = "Sides";
     sidesMenuDiv.appendChild(sides);
