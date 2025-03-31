@@ -49,19 +49,12 @@ function sidesMenu() {
     return sidesMenuDiv;
 }
 
-export const menu =() => {
-    const content = document.querySelector("#content");
-    content.innerHTML = "";
-
-   
-
-    
-
-    const mainMenu = document.createElement("div");
-    mainMenu.classList.add("main-menu");
+function mainMenu() {
+    const mainMenuDiv = document.createElement("div");
+    mainMenuDiv.classList.add("main-menu");
     const mains = document.createElement("h2");
     mains.innerHTML = "Main";
-    mainMenu.appendChild(mains);
+    mainMenuDiv.appendChild(mains);
 
     const mainDishes = [
         "<strong>Grilled Chicken Sandwich 6$</strong></br>A juicy, tender grilled chicken breast served with crisp lettuce, tomato, and creamy mayo on a soft bun.",
@@ -77,9 +70,22 @@ export const menu =() => {
         dishLi.innerHTML = dish;
         mainUl.appendChild(dishLi);
     })
-    mainMenu.appendChild(mainUl);
+    mainMenuDiv.appendChild(mainUl);
+
+    return mainMenuDiv;
+}
+
+export const menu =() => {
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
+
+   
+
+    
+
+    
 
     content.appendChild(drinksMenu());
     content.appendChild(sidesMenu());
-    content.appendChild(mainMenu);
+    content.appendChild(mainMenu());
 }
