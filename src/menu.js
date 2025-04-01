@@ -75,17 +75,14 @@ function mainMenu() {
     return mainMenuDiv;
 }
 
-export const menu =() => {
+function appendingDiv() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
-
-   
-
-    
-
-    
 
     content.appendChild(drinksMenu());
     content.appendChild(sidesMenu());
     content.appendChild(mainMenu());
+
+    return content;
 }
+
