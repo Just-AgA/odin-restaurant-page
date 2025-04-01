@@ -86,3 +86,6 @@ function appendingDiv() {
     return content;
 }
 
+export const menu =() => {
+    appendingDiv();
+}
