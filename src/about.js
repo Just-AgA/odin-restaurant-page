@@ -36,3 +36,11 @@ function contactDiv() {
     return contact;
 }
 
+export const about = () => {
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
+
+    content.appendChild(aboutDiv());
+    content.appendChild(contactDiv());
+
+}
