@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: burlywood;
-    background-image: ;
+    background-image: url("../pictures/coffee_image.jpg");
+    background-repeat: no-repeat;
 }
 
 .coffee-menu, .sides-menu, .main-menu, .contact, .init-div, .about-div {
@@ -27,13 +27,34 @@ nav button {
     margin-right: 20px;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: aliceblue;
+}
+
+span {
+    font-weight: bold;
 }
 
 #content {
-    border: 1px solid black;
-    height: 1100px;
+    background-color: burlywood;
+    height: 100%;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 2px 1px 5px 1px black;
+    border-radius: 4px;
+    line-height: 1.15rem;
+}
+
+li {
+    list-style-type: none;
 }
