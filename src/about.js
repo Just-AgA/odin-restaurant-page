@@ -7,8 +7,12 @@ function aboutDiv() {
     aboutPage.appendChild(aboutUs);
 
     const aboutDescription = document.createElement("p");
-    aboutDescription.innerHTML ="Here at <strong>Brew & Bites</strong> we are all about bringing people together over delicious food and freshly brewed coffee in a cozy, inviting space. Whether you're here for a quick bite or to relax with friends, we strive to create a warm and memorable experience for everyone. Our menu offers a variety of dishes made with the finest ingredients, from our hearty grilled sandwiches to crispy fries, paired perfectly with our selection of coffees. Every meal is crafted to make you feel right at home."
+    aboutDescription.innerHTML ="Here at <strong>Brew & Bites</strong> we are all about bringing people together over delicious food and freshly brewed coffee in a cozy, inviting space. Whether you're here for a quick bite or to relax with friends, we strive to create a warm and memorable experience for everyone."
     aboutPage.appendChild(aboutDescription);
+
+    const secondPara = document.createElement("p");
+    secondPara.innerHTML = "Our menu offers a variety of dishes made with the finest ingredients, from our hearty grilled sandwiches to crispy fries, paired perfectly with our selection of coffees. Every meal is crafted to make you feel right at home."
+    aboutPage.appendChild(secondPara);
 
     return aboutPage;
 }
@@ -21,7 +25,7 @@ function contactDiv() {
     contact.appendChild(contactHeading);
 
     const contactPara = document.createElement("p");
-    contactPara.innerHTML = "<strong>Address:</strong> </br>1234 Craft Ave,Flavor Town, FT 56789";
+    contactPara.innerHTML = "<strong>Address:</strong> </br>123 Maple Street, Pleasantville, FT 56789, USA";
 
     contact.appendChild(contactPara);
 
