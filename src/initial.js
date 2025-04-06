@@ -12,17 +12,17 @@ const paragraphComponent = () => {
 
 const openingHrsComponent = () => {
     const openingHrs = document.createElement("p");
-    openingHrs.innerHTML = "Opening hours:";
+    openingHrs.innerHTML = "<span>Opening hours:</span>";
     return openingHrs;
 }
 
 const unorderedListComponent = () => {
     const unorderedList = document.createElement("ul");
-    const listItems = ["Monday to Friday: 7:00 AM - 9:00 PM", "Saturday: 8:00 AM - 10:00 PM", "Sunday: 9:00 AM - 6:00 PM"];
+    const listItems = ["<span>Monday to Friday:</span> 7:00 AM - 9:00 PM", "<span>Saturday:</span> 8:00 AM - 10:00 PM", "<span>Sunday:</span> 9:00 AM - 6:00 PM"];
 
     listItems.forEach(item => {
         const li = document.createElement("li");
-        li.innerText = item;
+        li.innerHTML = item;
         unorderedList.appendChild(li);
     })
     return unorderedList;
