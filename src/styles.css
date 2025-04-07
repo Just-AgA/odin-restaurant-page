@@ -30,6 +30,7 @@ nav button {
     border: none;
     background-color: green;
     color: white;
+    font-weight: bold;
 }
 
 button:hover {
